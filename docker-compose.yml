@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ros2_test:
+    image: osrf/ros:humble-desktop-full
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix #for using local X server
+    devices:
+      - /dev/:/dev/
+    environment:
+      DISPLAY: ${DISPLAY}
+    network_mode: "host"
+    tty: true
+    privileged: true # Remove this if not strictly needed
