@@ -1,0 +1,13 @@
+{
+  "package_name": "turtlesim",
+  "non_idl_tuples": [
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:action/RotateAbsolute.action",
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:msg/Color.msg",
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:msg/Pose.msg",
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:srv/Kill.srv",
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:srv/SetPen.srv",
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:srv/Spawn.srv",
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:srv/TeleportAbsolute.srv",
+    "/workspace/ros2_ws/src/ros_tutorials/turtlesim:srv/TeleportRelative.srv"
+  ]
+}
