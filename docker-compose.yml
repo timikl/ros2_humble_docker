@@ -1,0 +1,16 @@
+version: '3.8'  # Add version for docker-compose compatibility
+
+services:
+  ros2_humble:
+    build:
+      context: .  # Build from the Dockerfile in the current directory
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For using local X server
+      - ./ros2_ws:/workspace/ros2_ws   # Assuming you want to sync your ROS2 workspace
+    devices:
+      - /dev/:/dev/
+    environment:
+      DISPLAY: ${DISPLAY}
+    network_mode: "host"
+    tty: true
+    privileged: true  # Remove if not strictly needed
