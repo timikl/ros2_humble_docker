@@ -3,6 +3,7 @@ services:
     image: osrf/ros:humble-desktop-full
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix # for using local X server
+      - ./ros2_ws:/workspace/ros2_ws  # Assuming you want to sync your ROS2 workspace
     devices:
       - /dev/:/dev/
     environment:
